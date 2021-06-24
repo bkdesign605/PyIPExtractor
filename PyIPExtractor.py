@@ -111,7 +111,8 @@ def main():
         print("—" * 50)
         print('Thank you, your search is now complete!\n' 'Your scan ended at: ', end)
         print('It took:', time.time() - timer, 'seconds to scan your file.')
-
+        # get user input to exit Python program once it has completed extracting the IP addresses.
+        input('Press ENTER to exit')
     except KeyboardInterrupt:
         print('Scan was interrupted, please try again!')
         pass
